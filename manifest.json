@@ -1,0 +1,17 @@
+{
+    "name": "BetterBacklogTools",
+    "version": "0.0.1",
+    "author": "KISUGE, Yuto",
+    "manifest_version": 2,
+    "description": "Backlog (http://www.backlog.jp/) のちょっとした気に入らないところをどうにかする",
+    "permissions": ["https://*.backlog.jp/", "storage"],
+    "content_scripts": [
+        {
+            "matches": ["https://*.backlog.jp/*"],
+            "js": ["jquery-2.1.4.min.js", "config.js", "main.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "web_accessible_resources": ["options.html"],
+    "options_page": "options.html"
+}

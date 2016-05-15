@@ -1,0 +1,39 @@
+body {
+    background-color: #222;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: default;
+}
+
+#wrapper {
+    position: absolute;
+    left: calc(50vw - 300px);
+    top: 50px;
+    width: 600px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px #fff;
+    background-color: #fff;
+}
+
+h1, h2, p {
+    display: inline;
+}
+
+p, h2 + label, button {
+    float: right;
+}
+
+hr {
+    clear: both;
+}
+
+#status {
+    float: right;
+    color: red;
+    margin-right: 1em;
+}
+
+label {
+    display: block;
+}
