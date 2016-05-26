@@ -25,6 +25,17 @@ var bbt_config = (function () {
                 }
             }
         },
+        add_pullreq_from_ticket: {
+            description: '課題ページにプルリクエスト作成ボタンを追加',
+            action: function () {
+                var btn = $('<button class="Btn-gray">追加する (admin)</button>')
+                        .css({'margin': '1em', 'padding': '1em'})
+                        .on('click', function () {
+                            location.href = '/git/DEV/admin/pullRequests/add/master...feature/' + $('.issue-type-name + strong').text();
+                        });
+                $('#pullRequestList').append(btn);
+            }
+        },
         keyboard_shortcut: {
             description: 'キーボードショートカットを使う',
             action: function () {

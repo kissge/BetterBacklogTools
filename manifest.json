@@ -1,6 +1,6 @@
 {
     "name": "BetterBacklogTools",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "KISUGE, Yuto",
     "manifest_version": 2,
     "description": "Backlog (http://www.backlog.jp/) のちょっとした気に入らないところをどうにかする",
