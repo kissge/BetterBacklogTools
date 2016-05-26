@@ -1,6 +1,6 @@
 {
     "name": "BetterBacklogTools",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "author": "KISUGE, Yuto",
     "manifest_version": 2,
     "description": "Backlog (http://www.backlog.jp/) のちょっとした気に入らないところをどうにかする",
@@ -8,7 +8,7 @@
     "content_scripts": [
         {
             "matches": ["https://*.backlog.jp/*"],
-            "js": ["jquery-2.1.4.min.js", "config.js", "main.js"],
+            "js": ["jquery-2.1.4.min.js", "mousetrap.js", "config.js", "main.js"],
             "run_at": "document_end"
         }
     ],
