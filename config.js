@@ -5,8 +5,14 @@ var bbt_config = (function () {
         disable_project_accordion: {
             description: 'ダッシュボードのプロジェクト一覧から各機能へのリンクを最初から表示する (WIP)',
             action: function () {
-                $('li.Project').unbind('mouseenter mouseleave'); // This doesn't seem to work
+              $(function() { 
+                  var script = document.createElement('script');
+                  var str = 'jQuery("li.Project").unbind("mouseenter").unbind("mouseleave")';
+                  script.innerHTML = str;
+                  document.body.appendChild(script);
+
                 $('.ProjectNavi').show();
+              });
             }
         },
         remove_textbox_in_repository_list: {
